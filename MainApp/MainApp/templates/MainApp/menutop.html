@@ -6,20 +6,18 @@
 		var xhr = new XMLHttpRequest();
 		xhr.open('GET', 'https://api.coinmarketcap.com/v1/ticker/bitcoin/', false);
 		xhr.send();
-		var tt = JSON.parse(xhr.responseText)['0']['price_usd'];
-		var price_usd = parseFloat(tt);
-		var price_fixed = price_usd.toFixed(2);
-		return price_fixed;
+		var price_usd = JSON.parse(xhr.responseText)['0']['price_usd'];
+		price_usd = parseFloat(price_usd).toFixed(2);		
+		return price_usd;
 	};
 
 	function price_eth() {
 		var xhr = new XMLHttpRequest();
 		xhr.open('GET', 'https://api.coinmarketcap.com/v1/ticker/ethereum/', false);
 		xhr.send();
-		var tt = JSON.parse(xhr.responseText)['0']['price_usd'];
-		var price_usd = parseFloat(tt);
-		var price_fixed = price_usd.toFixed(2);
-		return price_fixed;
+		var price_usd = JSON.parse(xhr.responseText)['0']['price_usd'];
+		price_usd = parseFloat(price_usd).toFixed(2);		
+		return price_usd;
 	};
 </script>
 
@@ -28,22 +26,21 @@
 	<div class="menutop_grid">		
 		
 		<div class="menutop_place_logo">
-			<input type="submit" onclick="window.location='/main/'" value="Main" class="menutop_button1 w-button">
+			<input type="submit" onclick="window.location='/main/'" value="" class="menutop_button_main w-button">
 		</div>
 
 		<div class="menutop_place_search">			
 		</div>
 
 		<div class="menutop_place_username">			
-			<p id="myText">
-				{{ user.username }}
-			</p>
+			<input type="submit" onclick="window.location='/admin/'" value="" class="menutop_button_admin w-button">
 		</div>
 
 		<div class="menutop_place_favourite">			
 		</div>
 
-		<div class="menutop_place_orders">			
+		<div class="menutop_place_orders">
+			<input type="submit" onclick="window.location='/orders/myorders/'" value="" class="menutop_button_orders w-button">
 		</div>
 
 		<div class="menutop_place_messages">			
@@ -51,20 +48,19 @@
 
 		<div class="menutop_place_balance_btc">
 			<div class="balance_inside" id="price_btc">
-				1 BTC:<br>
-				<script>document.write(price_btc());</script> $
+				BTC/USD<br>
+				<script>document.write(price_btc());</script>
 			</div>
 		</div>
 		<div class="menutop_place_balance_eth">
-			<div class="balance_inside">
-				1 ETH:<br>
-				<script>document.write(price_eth());</script> $
+			<div class="balance_inside" id="price_eth">
+				ETH/USD<br>
+				<script>document.write(price_eth());</script>
 			</div>
 		</div>
 		<div class="menutop_place_auth">
-			<input type="submit" onclick="window.location='/main/logout/'" value="Log out" class="menutop_button w-button">
-		</div>
-		
+			<input type="submit" onclick="window.location='/logout/'" value="Log out" class="menutop_button w-button">
+		</div>		
 
 	</div>
 	

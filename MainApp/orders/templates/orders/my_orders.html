@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'orders/style.css' %}">
+
+{% if list_orders_buy %}
+    <p>Total buy orders: {{ number_orders_buy }}</p>
+    <ul>
+    {% for order in list_orders_buy %}
+        <li>Seller: {{ order.seller }}, 
+        Service: {{ order.service }}, 
+        Value: {{ order.value }}, 
+        Price: {{ order.price }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No buy orders are available.</p>
+{% endif %}
+
+{% if list_orders_sell %}
+    <p>Total sell orders: {{ number_orders_sell }}</p>
+    <ul>
+    {% for order in list_orders_sell %}
+        <li>Buyer: {{ order.buyer }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No sell orders are available.</p>
+{% endif %}

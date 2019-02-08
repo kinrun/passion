@@ -1,0 +1,10 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'orders/style.css' %}">
+
+<div class="main_grid">	
+	<div class="show_place">
+		{% block orders %}
+			{% include "orders/my_orders.html" %}
+		{% endblock %}
+	</div>	
+</div>

@@ -16,31 +16,17 @@
 	grid-template-rows: var(--butt-height) var(--butt-height) var(--butt-height) var(--butt-height) var(--butt-height) var(--butt-height) var(--butt-height);
 }
 
-.link_personal {
+.link_account {
 	grid-area: 1 / 2 / 2 / 3;
 	
 }
-.link_main {
+.link_sellers {
 	grid-area: 2 / 2 / 3 / 3;
 	
 }
-.link_saloon {
+.link_saloons {
 	grid-area: 3 / 2 / 4 / 3;
 	
-}
-.link_shop {
-	grid-area: 4 / 2 / 5 / 3;
-	
-}
-.link_prn {
-	grid-area: 5 / 2 / 6 / 3;
-	
-}
-.link_appartaments {
-	grid-area: 6 / 2 / 7 / 3;
-}
-.link_casino {
-	grid-area: 7 / 2 / 8 / 3;
 }
 
 .link_button {

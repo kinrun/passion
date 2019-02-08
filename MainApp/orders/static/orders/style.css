@@ -1,0 +1,88 @@
+:root{
+    --cell_height: 35px;
+}
+body {
+	margin: 0;
+}
+.main_grid {
+	display: grid;
+	grid-template-columns: 100px 1fr 100px;
+	grid-template-rows: 50px 1200px 100px;
+}
+.show_place {
+	grid-area: 2 / 2 / 3 / 3;
+}
+.order_create_grid {
+	display: grid;
+	grid-template-columns: 300px 250px 1fr 100px;
+	grid-template-rows: 1200px;
+}
+.order_create_place_foto {
+	grid-area: 1 / 1 / 2 / 2;
+}
+.order_create_place_main {
+	grid-area: 1 / 2 / 2 / 3;
+	margin-right: 50px;
+	text-align: right;
+}
+.order_create_place_form {
+	grid-area: 1 / 3 / 2 / 4;
+}
+.order_create_place_rmenu {
+	grid-area: 1 / 4 / 2 / 5;
+}
+.order_create_main_grid {
+	display: grid;	
+	grid-template-columns: 1fr;
+	grid-template-rows: var(--cell_height) var(--cell_height) var(--cell_height) var(--cell_height) var(--cell_height) var(--cell_height) var(--cell_height) var(--cell_height) 200px;
+}
+.ocmp_seller {
+	grid-area: 1 / 1 / 2 / 2;
+	margin-top: 0px;
+	height: var(--cell_height);	
+}
+.ocmp_service {
+	grid-area: 2 / 1 / 3 / 2;
+	height: var(--cell_height);	
+}
+.ocmp_value {
+	grid-area: 3 / 1 / 4 / 2;
+	height: var(--cell_height);
+}
+.ocmp_place {
+	grid-area: 4 / 1 / 5 / 2;
+	height: var(--cell_height);
+}
+.ocmp_dnt {
+	grid-area: 5 / 1 / 6 / 2;
+	height: var(--cell_height);
+}
+.ocmp_paymethod {
+	grid-area: 6 / 1 / 7 / 2;
+	height: var(--cell_height);
+}
+.ocmp_total {
+	grid-area: 7 / 1 / 8 / 2;
+	height: var(--cell_height);
+}
+.ocmp_balance {
+	grid-area: 8 / 1 / 9 / 2;
+	height: var(--cell_height);
+}
+.ocmp_buttons {
+	grid-area: 9 / 1 / 10 / 2;
+}
+.myformclass {
+	margin-bottom: 10px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 5px;	
+	width: 250px;
+	height: 20px;
+}
+.form_control {
+	
+}
+.text_div {
+	height: var(--cell_height);
+}

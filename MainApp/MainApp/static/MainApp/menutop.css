@@ -10,7 +10,7 @@
 }
 .menutop_grid {
 	display: grid;
-	grid-template-columns: 100px 50px 1fr 60px 60px 60px var(--butt-width) var(--butt-width) var(--butt-width);
+	grid-template-columns: 100px 50px 1fr 60px 50px 60px var(--butt-width) var(--butt-width) var(--butt-width);
 	grid-template-rows: 50px;
 }
 .menutop_place_logo {
@@ -41,13 +41,9 @@
 }
 .menutop_place_orders {
 	grid-area: 1 / 5 / 2 / 6;
-	background: orange url("images/orders.png") no-repeat;
-	background-size: contain;
-	background-position: center;
+	text-align: center;
 }
-.menutop_place_orders:hover {
-	border-style: solid;
-}
+
 .menutop_place_messages {
 	grid-area: 1 / 6 / 2 / 7;	
 	background: orange url("images/messages.png") no-repeat;
@@ -94,7 +90,7 @@
 	border-style: solid;
 }
 
-.menutop_button1 {
+.menutop_button_main {
 	height: 50px;
 	width: var(--butt-width);
 	border-radius: 5px;
@@ -106,6 +102,40 @@
 	background-size: contain;
 	background-position: center;
 }
-.menutop_button1:hover {
+.menutop_button_main:hover {
+	border-style: solid;
+}
+
+.menutop_button_admin {
+	height: 50px;
+	width: 50px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: black;
+	background: orange;
+	background: orange url("images/tools.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.menutop_button_admin:hover {
+	border-style: solid;
+}
+
+.menutop_button_orders {
+	height: 50px;
+	width: 50px;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: black;
+	background: orange;
+	background: orange url("images/orders.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.menutop_button_orders:hover {
 	border-style: solid;
 }

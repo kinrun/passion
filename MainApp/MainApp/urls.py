@@ -16,10 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+admin.site.site_header = "GIRLS Admin"
+admin.site.site_title = "GIRLS Admin Place"
+admin.site.index_title = "Welcome to Girl Seller Portal"
+
 urlpatterns = [
-    path('', include('signin.urls')),
+    path('', include('main.urls')),
     path('signin/', include('signin.urls')),
-    path('signup/', include('signup.urls')),
-    path('main/', include('main.urls')),
+    path('signup/', include('signup.urls')),    
+    path('account/', include('personal.urls')),
+    path('orders/', include('orders.urls')),
     path('admin/', admin.site.urls),
 ]

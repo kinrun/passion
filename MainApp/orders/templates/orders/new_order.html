@@ -1,0 +1,79 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'orders/style.css' %}">
+
+<div class="order_create_grid">	
+	<div class="order_create_place_foto">
+		Foto
+	</div>
+
+	<div class="order_create_place_main">
+		<div class="ocmp_seller">
+			Seller:
+		</div>
+		<div class="ocmp_service">
+			Service:
+		</div>
+		<div class="ocmp_value">
+			Value:
+		</div>
+		<div class="ocmp_place">
+			Place:
+		</div>
+		<div class="ocmp_dnt">
+			Date and Time:
+		</div>
+		<div class="ocmp_paymethod">
+			Pay Method:
+		</div>
+		<div class="ocmp_total">
+			Total:
+		</div>
+		<div class="ocmp_balance">
+			Some number:
+		</div>
+
+		<div class="ocmp_buttons">
+			Your balance:
+		</div>		
+	</div>
+
+	<div class="order_create_place_form">
+		<form action="." method="post">
+			{% csrf_token %}
+			<div class="text_div">
+				{{ seller_name }}
+			</div>
+			<div class="text_div">
+				{{ form.service }}
+			</div>
+			<div class="text_div">
+				{{ form.value }}
+			</div>			
+			<div class="text_div">
+				{{ form.place }}
+			</div>
+			<div class="text_div">
+				{{ form.date_choosen }}
+			</div>
+			<div class="text_div">
+				{{ form.pay_method }}
+			</div>
+			<div>
+				{{ form.price }}
+			</div>
+			<div class="text_div">
+				390$ (0.1 BTC)
+			</div>
+			<div class="text_div">
+				{{ balance_usd }} $ ({{ balance_btc}} BTC, {{ balance_eth}} ETH) 
+			</div>
+			<div>
+				<input type="submit" value="ORDER" class="w-button">
+			</div>
+		</form>
+	</div>
+
+	<div class="order_create_place_rmenu">
+		Menu
+	</div>
+</div>

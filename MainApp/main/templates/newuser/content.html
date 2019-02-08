@@ -1,0 +1,21 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'newuser/style.css' %}">
+
+<div class="new_user_grid">	
+	<div class="new_user_text">	
+		<div>first_name</div>
+		<div>last_name</div>
+	</div>
+	<div class="new_user_form">
+		<form action="." method="post">
+			{% csrf_token %}
+			<div>{{ form.first_name }}</div>
+			<div>{{ form.last_name }}</div>
+			<div>{{ form.country }}</div>
+			<div>{{ form.city }}</div>
+			<div>
+				<input type="submit" value="READY">
+			</div>
+		</form>
+	</div>
+</div>

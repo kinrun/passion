@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'MainApp/mainapp.css' %}">
+
+<html>
+<body>	
+	{% block menutop %}
+		{% include "MainApp/menutop.html" %}
+	{% endblock %}
+	{% block menuleft %}
+		{% include "MainApp/menuleft.html" %}
+	{% endblock %}
+	{% block menuright %}
+		{% include "MainApp/menuright.html" %}
+	{% endblock %}
+	<div class="main_grid">	
+		<div class="show_place">
+		{% block content %}
+			{% include content %}
+		{% endblock %}
+		</div>	
+	</div>
+</body>
+</html>

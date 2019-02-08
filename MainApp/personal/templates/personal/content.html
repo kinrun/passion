@@ -1,9 +1,7 @@
 {% load staticfiles %}
 <link rel="stylesheet" type="text/css" href="{% static 'personal/style.css' %}">
 
-<div class="main_grid">	
-	<div class="show_place">
-		<div class="pers_cont_main">
+<div class="pers_cont_main">
 			
 			{% block persmenu %}
 				{% include "personal/persmenu.html" %}
@@ -24,7 +22,7 @@
 					<div></div>
 					<div></div>
 					<div>
-						<input type="submit" onclick="window.location='/personal/'" value="Settings" class="pers_button w-button">
+						<input type="submit" onclick="window.location='/account/'" value="Settings" class="pers_button w-button">
 					</div>
 				</div>
 				<div class="pers_right_grid">
@@ -34,13 +32,13 @@
 
 					<div class="pers_button_grid">
 						<div>
-							<input type="submit" onclick="window.location='/personal/'" value="My Orders" class="pers_button w-button">
+							<input type="submit" onclick="window.location='/account/'" value="My Orders" class="pers_button w-button">
 						</div>
 						<div>
-							<input type="submit" onclick="window.location='/personal/'" value="My Messages" class="pers_button w-button">
+							<input type="submit" onclick="window.location='/account/'" value="My Messages" class="pers_button w-button">
 						</div>
 						<div>
-							<input type="submit" onclick="window.location='/personal/'" value="My Feedbacks" class="pers_button w-button">
+							<input type="submit" onclick="window.location='/account/'" value="My Feedbacks" class="pers_button w-button">
 						</div>
 					</div>
 					
@@ -54,6 +52,4 @@
 				</div>
 			</div>
 		
-		</div>
-	</div>	
 </div>

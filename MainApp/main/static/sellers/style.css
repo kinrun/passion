@@ -1,0 +1,44 @@
+.contentshow {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 300px 300px 300px;
+}
+
+.maincast {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 200px 1fr 100px;
+}
+
+.cardview {
+	display: grid;
+	grid-template-columns: 5% 30% 5% 55% 5%;
+	grid-template-rows: 5% 60% 30% 5%;
+	background-color: #fcfc86;
+}
+.cardview_foto {
+	grid-area: 2 / 2 / 4 / 3;
+	
+}
+.cardview_text {
+	grid-area: 2 / 4 / 3 / 5;
+	background-color: green;
+}
+.cardview_buttons {
+	grid-area: 3 / 4 / 4 / 5;
+	background-color: blue;
+}
+
+.pers_button_dep {
+	height: 50px;
+	width: 120px;
+	border-radius: 10px;
+	background-color: red;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: white;
+}
+.pers_button_dep:hover {
+	border-style: solid;
+}

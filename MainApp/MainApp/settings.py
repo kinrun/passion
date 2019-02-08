@@ -34,18 +34,14 @@ INSTALLED_APPS = [
     'signin.apps.SigninConfig',
     'personal.apps.PersonalConfig',
     'main.apps.MainConfig',
-    'saloons.apps.SaloonsConfig',
-    'shops.apps.ShopsConfig',
-    'media.apps.MediaConfig',
-    'appartaments.apps.AppartamentsConfig',
-    'casino.apps.CasinoConfig',
     'signup.apps.SignupConfig',
+    'orders.apps.OrdersConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.staticfiles',    
 ]
 
 MIDDLEWARE = [
