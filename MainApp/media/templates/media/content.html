@@ -1,0 +1,10 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'media/style.css' %}">
+
+<div class="main_grid">	
+	<div class="show_place">
+		{% block media %}
+			{% include "media/show.html" %}
+		{% endblock %}
+	</div>	
+</div>

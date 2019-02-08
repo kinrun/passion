@@ -1,0 +1,76 @@
+body {
+	margin: 0;
+}
+
+
+#show_place_girls {
+	display: none;
+}
+#show_place_saloons {
+	display: none;
+}
+#show_place_shops {
+	display: none;
+}
+#show_place_media {
+	display: none;
+}
+#show_place_places {
+	display: none;
+}
+#show_place_casino {
+	display: none;
+}
+
+.main_grid {
+	display: grid;
+	grid-template-columns: 100px 1fr 100px;
+	grid-template-rows: 50px 1200px 100px;
+}
+.show_place {
+	grid-area: 2 / 2 / 3 / 3;
+}
+.item0 {
+	grid-column-start: 1;
+	grid-column-end: 4;
+}
+.item1 {
+	background-color: RGB(249, 201, 16);
+}
+.item2 {
+	background-color: RGB(140, 153, 16);
+}
+.item3 {
+	background-color: RGB(140, 123, 16);
+}
+
+.contentshow {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 300px 300px 300px;
+}
+
+.maincast {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 200px 1fr 100px;
+}
+
+.cardview {
+	display: grid;
+	grid-template-columns: 5% 30% 5% 55% 5%;
+	grid-template-rows: 5% 60% 30% 5%;
+	background-color: #fcfc86;
+}
+.cardview_foto {
+	grid-area: 2 / 2 / 4 / 3;
+	background-color: red;
+}
+.cardview_text {
+	grid-area: 2 / 4 / 3 / 5;
+	background-color: green;
+}
+.cardview_buttons {
+	grid-area: 3 / 4 / 4 / 5;
+	background-color: blue;
+}

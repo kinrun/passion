@@ -1,0 +1,9 @@
+.menuright {
+	background-color: orange;
+	margin-top: 50px;
+	right: 0;
+	height: 100%;
+	width: 100px;
+	position: fixed;
+	z-index: 50;
+}

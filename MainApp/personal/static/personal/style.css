@@ -1,0 +1,144 @@
+body {
+	margin: 0;
+}
+
+.main_grid {
+	display: grid;
+	grid-template-columns: 100px 1fr 100px;
+	grid-template-rows: 50px 1200px 100px;
+}
+.show_place {
+	grid-area: 2 / 2 / 3 / 3;
+}
+
+.pers_cont_main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 75px 50px 1200px;
+}
+.pers_menu_top {
+	display: grid;
+	grid-template-columns: 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px 1fr 10px;
+	grid-template-rows: 75px;
+}
+.pers_grid {
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-template-rows: 1000px;
+}
+.pers_left_grid {
+	display: grid;
+	grid-template-columns: 20% 75% 5%;
+	grid-template-rows: 10px 350px 20px 50px;
+	text-align: center;
+}
+.pers_right_grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 190px 100px 750px;
+}
+
+.pers_balance_grid {
+	display: grid;
+	grid-template-columns: 10px 80px 10px 200px 10px 120px 10px 120px;
+	grid-template-rows: 10px 50px 10px 50px 10px 50px;
+}
+.pers_balance_text {
+	grid-area: 2 / 2 / 3 / 3;
+}
+.pers_balance_dollar {
+	grid-area: 2 / 4 / 3 / 5;
+	border-style: solid;
+	border-color: grey;
+	background-color: white;
+	border-radius: 10px;
+}
+.pers_balance_eth {
+	grid-area: 4 / 4 / 5 / 5;
+	border-style: solid;
+	border-color: grey;
+	background-color: white;
+	border-radius: 10px;
+}
+.pers_balance_btc {
+	grid-area: 6 / 4 / 7 / 5;	
+	border-style: solid;
+	border-color: grey;
+	background-color: white;
+	border-radius: 10px;
+}
+.pers_balance_inside {
+	margin-top: 12px;
+	margin-left: 12px;
+	font-weight: bold;
+}
+.pers_balance_eth_deposit {
+	grid-area: 4 / 6 / 5 / 7;
+}
+.pers_balance_eth_withdraw {
+	grid-area: 4 / 8 / 5 / 9;
+}
+.pers_balance_btc_deposit {
+	grid-area: 6 / 6 / 7 / 7;
+}
+.pers_balance_btc_withdraw {
+	grid-area: 6 / 8 / 7 / 9;
+}
+
+.pers_button_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 100px;
+	text-align: center;
+}
+
+.pers_info_grid {
+	display: grid;
+	grid-template-columns: 90px 500px;
+	grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
+}
+
+.item1 {
+	background-color: RGB(249, 201, 16);
+}
+.pers_button {
+	height: 65px;
+	width: 180px;
+	border-radius: 10px;
+	background-color: #3c5bc2;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: white;
+}
+.pers_button:hover {
+	border-style: solid;
+}
+
+.pers_button_dep {
+	height: 50px;
+	width: 120px;
+	border-radius: 10px;
+	background-color: red;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: white;
+}
+.pers_button_dep:hover {
+	border-style: solid;
+}
+
+.pers_button_with {
+	height: 50px;
+	width: 120px;
+	border-radius: 10px;
+	background-color: #3c5bc2;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: white;
+}
+.pers_button_with:hover {
+	border-style: solid;
+}

@@ -1,0 +1,10 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'signin/style.css' %}">
+
+<div class="login_main">	
+	<div class="login_form_place">
+		{% block signinform %}
+			{% include "signin/form.html" %}
+		{% endblock %}
+	</div>	
+</div>

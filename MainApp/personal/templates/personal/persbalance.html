@@ -1,0 +1,35 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'personal/style.css' %}">
+
+<div class="pers_balance_grid">
+	<div class="pers_balance_text">
+		Balances:
+	</div>
+	<div class="pers_balance_dollar">
+		<div class="pers_balance_inside">
+			1,136   $
+		</div>		
+	</div>
+	<div class="pers_balance_eth">
+		<div class="pers_balance_inside">
+			{{ user.profile.balance_btc }}   BTC
+		</div>		
+	</div>
+	<div class="pers_balance_btc">
+		<div class="pers_balance_inside">
+			{{ user.profile.balance_eth }}   ETH
+		</div>		
+	</div>
+	<div class="pers_balance_eth_deposit">
+		<input type="submit" value="Deposit" class="pers_button_dep w-button">
+	</div>
+	<div class="pers_balance_eth_withdraw">
+		<input type="submit" value="Withdraw" class="pers_button_with w-button">
+	</div>
+	<div class="pers_balance_btc_deposit">
+		<input type="submit" value="Deposit" class="pers_button_dep w-button">
+	</div>
+	<div class="pers_balance_btc_withdraw">
+		<input type="submit" value="Withdraw" class="pers_button_with w-button">
+	</div>
+</div>

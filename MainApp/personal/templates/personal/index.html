@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+<body>
+	{% block menutop %}
+		{% include "MainApp/menutop.html" %}
+	{% endblock %}
+	{% block menuleft %}
+		{% include "MainApp/menuleft.html" %}
+	{% endblock %}
+	{% block menuright %}
+		{% include "MainApp/menuright.html" %}
+	{% endblock %}
+	{% block content %}
+		{% include "personal/content.html" %}
+	{% endblock %}
+</body>
+</html>

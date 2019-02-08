@@ -1,0 +1,23 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'MainApp/menutop.css' %}">
+
+<div class="menutop">
+	<div class="menutop_list">
+		<div class="button_signin_place">
+			<input type="submit" onclick="window.location='/signin/'" value="Sign In" class="menutop_button w-button">
+		</div>
+		<div class="balance_place">
+			<div class="balance_inside">
+				{{ user.profile.balance_eth }} ETH
+			</div>
+		</div>
+		<div class="button_logout_place">
+			<input type="submit" onclick="window.location='/main/logout/'" value="Log out" class="menutop_button w-button">
+		</div>
+		<div class="username_place">
+			{{ user.username }}
+		</div>
+
+	</div>
+	
+</div>

@@ -1,0 +1,54 @@
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'personal/style.css' %}">
+
+<div class="pers_cont_main">
+			
+	{% block persmenu %}
+		{% include "personal/persmenu.html" %}
+	{% endblock %}
+
+	<div></div>
+
+	<div class="pers_grid">
+		<div class="pers_left_grid">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div class="item1">Foto</div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div>
+				<input type="submit" value="Settings" class="pers_button w-button">
+			</div>
+		</div>
+		<div class="pers_right_grid">
+			{% block persbalance %}
+				{% include "personal/persbalance.html" %}
+			{% endblock %}
+			<div class="pers_button_grid">
+				<div>
+					<input type="submit" value="My Orders" class="pers_button w-button">
+				</div>
+				<div>
+					<input type="submit" value="My Messages" class="pers_button w-button">
+				</div>
+				<div>
+					<input type="submit" value="My Feedbacks" class="pers_button w-button">
+				</div>
+			</div>
+					
+			<div class="pers_info_grid">
+				<div>Name</div>
+				<div>{{ user.username }}</div>
+				<div>Location</div>
+				<div>{{ user.profile.location }}</div>
+						
+			</div>
+		</div>
+	</div>
+		
+</div>

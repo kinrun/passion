@@ -1,0 +1,75 @@
+body {	
+	background: white url("images/background.jpg") no-repeat;
+}
+
+.login_main {
+	display: grid;
+	grid-template-columns: 30% 40% 30%;
+	grid-template-rows: 150px 350px 100px;
+}
+.login_form_place {
+	grid-area: 2 / 2 / 3 / 3;
+}
+.login_form {
+	display: grid;
+	grid-template-columns: 20% 10% 40% 10% 20%;
+	grid-template-rows: 40px 40px 20px 40px 1px 50px 20px 50px 20px 50px 20px 40px 20px;    
+}
+.form_setback {
+	grid-area: 1 / 1 / 14 / 6;
+	background-color: white;
+	opacity: 0.7;
+	border-radius: 20px;
+}
+.form_text1 {
+	grid-area: 2 / 2 / 3 / 5;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20pt;
+	z-index: 1;
+}
+.form_text2 {
+	grid-area: 4 / 2 / 5 / 5;
+	text-align: center;
+	font-size: 14pt;
+	z-index: 1;
+}
+.form_inside {
+	margin-top: 10px;
+	margin-left: 10px;
+	color: grey;
+}
+.form_enter {
+	grid-area: 6 / 2 / 11 / 5;
+	text-align: center;
+	z-index: 1;
+}
+.myfieldclass {
+	margin-bottom: 10px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 10px;	
+	width: 250px;
+	height: 45px;
+}
+
+.form_register {
+	grid-area: 12 / 2 / 13 / 5;
+	text-align: center;	
+	z-index: 1;
+}
+
+.signin_button {	
+	height: 45px;
+	width: 200px;
+	border-radius: 10px;
+	background-color: #f00;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: white;
+}
+.signin_button:hover {
+	border-style: solid;
+}
+

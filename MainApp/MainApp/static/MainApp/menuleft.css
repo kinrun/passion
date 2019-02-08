@@ -1,0 +1,59 @@
+:root{
+    --butt-height: 50px;
+}
+.menuleft {
+	background-color: white;
+	margin-top: 50px;
+	height: 100%;
+	width: 100px;
+	position: fixed;
+	left: 0;
+	z-index: 50;
+}
+.link_list {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: var(--butt-height) var(--butt-height) var(--butt-height) var(--butt-height) var(--butt-height) var(--butt-height) var(--butt-height);
+}
+
+.link_personal {
+	grid-area: 1 / 2 / 2 / 3;
+	
+}
+.link_main {
+	grid-area: 2 / 2 / 3 / 3;
+	
+}
+.link_saloon {
+	grid-area: 3 / 2 / 4 / 3;
+	
+}
+.link_shop {
+	grid-area: 4 / 2 / 5 / 3;
+	
+}
+.link_prn {
+	grid-area: 5 / 2 / 6 / 3;
+	
+}
+.link_appartaments {
+	grid-area: 6 / 2 / 7 / 3;
+}
+.link_casino {
+	grid-area: 7 / 2 / 8 / 3;
+}
+
+.link_button {
+	height: var(--butt-height);
+	width: 100px;
+	border-radius: 5px;
+	border-color: orange;
+	background-color: #fcf7f0;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: black;
+}
+.link_button:hover {
+	border-style: solid;
+}

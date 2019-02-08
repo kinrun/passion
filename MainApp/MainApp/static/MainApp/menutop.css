@@ -1,0 +1,48 @@
+.menutop {
+	background-color: orange;	
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+}
+.menutop_list {
+	display: grid;
+	grid-template-columns: 50% 1fr 1fr 1fr 1fr 10px;
+	grid-template-rows: 5px 40px 5px;
+}
+.username_place {
+	grid-area: 2 / 3 / 3 / 4;
+	text-align: center;
+}
+.button_signin_place {
+	grid-area: 2 / 4 / 3 / 5;
+	text-align: center;
+}
+.button_logout_place {
+	grid-area: 2 / 5 / 3 / 6;
+	text-align: center;
+}
+.balance_place {
+	grid-area: 2 / 2 / 3 / 3;
+	background-color: white;
+	border-style: solid;
+	font-weight: bold;
+	border-radius: 5px;	
+	text-align: center;
+}
+.balance_inside {
+	margin-top: 8px;	
+}
+.menutop_button {
+	height: 40px;
+	width: 90px;
+	border-radius: 10px;
+	background-color: #3c5bc2;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: white;
+}
+.menutop_button:hover {
+	border-style: solid;
+}
