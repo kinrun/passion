@@ -30,10 +30,7 @@ body {
 .show_place {
 	grid-area: 2 / 2 / 3 / 3;
 }
-.item0 {
-	grid-column-start: 1;
-	grid-column-end: 4;
-}
+
 .item1 {
 	background-color: RGB(249, 201, 16);
 }

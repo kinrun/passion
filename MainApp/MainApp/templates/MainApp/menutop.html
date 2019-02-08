@@ -1,22 +1,70 @@
 {% load staticfiles %}
 <link rel="stylesheet" type="text/css" href="{% static 'MainApp/menutop.css' %}">
 
+<script type="text/javascript">
+	function price_btc() {
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', 'https://api.coinmarketcap.com/v1/ticker/bitcoin/', false);
+		xhr.send();
+		var tt = JSON.parse(xhr.responseText)['0']['price_usd'];
+		var price_usd = parseFloat(tt);
+		var price_fixed = price_usd.toFixed(2);
+		return price_fixed;
+	};
+
+	function price_eth() {
+		var xhr = new XMLHttpRequest();
+		xhr.open('GET', 'https://api.coinmarketcap.com/v1/ticker/ethereum/', false);
+		xhr.send();
+		var tt = JSON.parse(xhr.responseText)['0']['price_usd'];
+		var price_usd = parseFloat(tt);
+		var price_fixed = price_usd.toFixed(2);
+		return price_fixed;
+	};
+</script>
+
 <div class="menutop">
-	<div class="menutop_list">
-		<div class="button_signin_place">
-			<input type="submit" onclick="window.location='/signin/'" value="Sign In" class="menutop_button w-button">
+	
+	<div class="menutop_grid">		
+		
+		<div class="menutop_place_logo">
+			<input type="submit" onclick="window.location='/main/'" value="Main" class="menutop_button1 w-button">
 		</div>
-		<div class="balance_place">
-			<div class="balance_inside">
-				{{ user.profile.balance_eth }} ETH
+
+		<div class="menutop_place_search">			
+		</div>
+
+		<div class="menutop_place_username">			
+			<p id="myText">
+				{{ user.username }}
+			</p>
+		</div>
+
+		<div class="menutop_place_favourite">			
+		</div>
+
+		<div class="menutop_place_orders">			
+		</div>
+
+		<div class="menutop_place_messages">			
+		</div>
+
+		<div class="menutop_place_balance_btc">
+			<div class="balance_inside" id="price_btc">
+				1 BTC:<br>
+				<script>document.write(price_btc());</script> $
 			</div>
 		</div>
-		<div class="button_logout_place">
+		<div class="menutop_place_balance_eth">
+			<div class="balance_inside">
+				1 ETH:<br>
+				<script>document.write(price_eth());</script> $
+			</div>
+		</div>
+		<div class="menutop_place_auth">
 			<input type="submit" onclick="window.location='/main/logout/'" value="Log out" class="menutop_button w-button">
 		</div>
-		<div class="username_place">
-			{{ user.username }}
-		</div>
+		
 
 	</div>
 	

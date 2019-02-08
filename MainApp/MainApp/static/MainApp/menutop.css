@@ -1,48 +1,111 @@
+:root{
+    --butt-width: 100px;
+}
 .menutop {
-	background-color: orange;	
+	background: linear-gradient(to top, orange, white);	
 	height: 50px;
 	width: 100%;
 	position: fixed;
 	z-index: 100;
 }
-.menutop_list {
+.menutop_grid {
 	display: grid;
-	grid-template-columns: 50% 1fr 1fr 1fr 1fr 10px;
-	grid-template-rows: 5px 40px 5px;
+	grid-template-columns: 100px 50px 1fr 60px 60px 60px var(--butt-width) var(--butt-width) var(--butt-width);
+	grid-template-rows: 50px;
 }
-.username_place {
-	grid-area: 2 / 3 / 3 / 4;
+.menutop_place_logo {
+	grid-area: 1 / 1 / 2 / 2;
 	text-align: center;
 }
-.button_signin_place {
-	grid-area: 2 / 4 / 3 / 5;
-	text-align: center;
+.menutop_place_search {
+	grid-area: 1 / 2 / 2 / 3;
+	background: orange url("images/search.png") no-repeat;
+	background-size: contain;
+	background-position: center;	
 }
-.button_logout_place {
-	grid-area: 2 / 5 / 3 / 6;
-	text-align: center;
+.menutop_place_search:hover {
+	border-style: solid;
 }
-.balance_place {
-	grid-area: 2 / 2 / 3 / 3;
+.menutop_place_username {
+	grid-area: 1 / 3 / 2 / 4;
+	text-align: left;
+}
+.menutop_place_favourite {
+	grid-area: 1 / 4 / 2 / 5;
+	background: orange url("images/favourite.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.menutop_place_favourite:hover {
+	border-style: solid;
+}
+.menutop_place_orders {
+	grid-area: 1 / 5 / 2 / 6;
+	background: orange url("images/orders.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.menutop_place_orders:hover {
+	border-style: solid;
+}
+.menutop_place_messages {
+	grid-area: 1 / 6 / 2 / 7;	
+	background: orange url("images/messages.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.menutop_place_messages:hover {
+	border-style: solid;
+}
+.menutop_place_balance_btc {
+	grid-area: 1 / 7 / 2 / 8;
 	background-color: white;
 	border-style: solid;
-	font-weight: bold;
-	border-radius: 5px;	
+	font-weight: bold;	
 	text-align: center;
 }
+.menutop_place_balance_eth {
+	grid-area: 1 / 8 / 2 / 9;
+	background-color: white;
+	border-style: solid;
+	font-weight: bold;	
+	text-align: center;
+	vertical-align: middle;
+}
+.menutop_place_auth {
+	grid-area: 1 / 9 / 2 / 10;
+	text-align: center;
+}
+
 .balance_inside {
-	margin-top: 8px;	
+	margin-top: 3px;	
 }
 .menutop_button {
-	height: 40px;
-	width: 90px;
-	border-radius: 10px;
-	background-color: #3c5bc2;
+	height: 50px;
+	width: var(--butt-width);
+	border-radius: 5px;
+	background: linear-gradient(to top, orange, white);
 	font-size: 16px;
 	font-weight: bold;
 	letter-spacing: 1px;
-	color: white;
+	color: black;
 }
 .menutop_button:hover {
+	border-style: solid;
+}
+
+.menutop_button1 {
+	height: 50px;
+	width: var(--butt-width);
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: black;
+	background: orange url("images/girl.png") no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.menutop_button1:hover {
 	border-style: solid;
 }

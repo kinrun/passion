@@ -11,7 +11,8 @@ class Profile(models.Model):
 
     #gender = models.CharField(max_length=10, blank=True)
     #bio = models.TextField(max_length=500, blank=True)
-    location = models.CharField(max_length=30, blank=True)
+    country = models.CharField(max_length=30, blank=True)
+    city = models.CharField(max_length=30, blank=True)
     balance_btc = models.CharField(max_length=30, blank=True)
     balance_eth = models.CharField(max_length=30, blank=True)
     address_btc = models.CharField(max_length=30, blank=True)

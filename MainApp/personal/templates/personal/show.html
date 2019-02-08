@@ -30,22 +30,16 @@
 				{% include "personal/persbalance.html" %}
 			{% endblock %}
 			<div class="pers_button_grid">
-				<div>
-					<input type="submit" value="My Orders" class="pers_button w-button">
-				</div>
-				<div>
-					<input type="submit" value="My Messages" class="pers_button w-button">
-				</div>
-				<div>
-					<input type="submit" value="My Feedbacks" class="pers_button w-button">
-				</div>
+				1
 			</div>
 					
 			<div class="pers_info_grid">
+				<div>Use Id</div>
+				<div>{{ user.id }}</div>
 				<div>Name</div>
 				<div>{{ user.username }}</div>
 				<div>Location</div>
-				<div>{{ user.profile.location }}</div>
+				<div>{{ user.profile.country }}</div>
 						
 			</div>
 		</div>
